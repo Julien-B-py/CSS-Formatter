@@ -1,0 +1,154 @@
+html, body {
+
+    color: #24221f;
+    margin: 0;
+
+    background-color : #F9E4C8;
+
+
+
+}
+
+h1 {
+
+    padding: 50px 0;
+    text-align:center;
+
+    width:85%;
+
+    line-height:5rem;
+    margin:0;
+
+
+
+
+}
+
+
+a {
+
+   	 font-weight: 600;
+    text-decoration:none;
+
+    color: #403d37;
+
+}
+
+a:hover {
+    color: #000;
+    text-decoration:none;
+
+}
+
+
+						.global-container {
+		    justify-content: center;
+    margin: 0 auto;
+
+
+    min-height:100vh;
+    overflow: auto;
+
+    align-items:center;
+    background-color : #FAEEE0;
+    display: flex;
+    flex-direction: column;
+
+
+    padding:50px 0;
+    text-align:center;
+    width:70%;
+
+
+
+}
+
+
+.videos-container {
+
+    margin: 0 auto;
+    padding: 1.75rem 0;
+    display: flex;
+    								flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+
+
+
+
+
+
+.yt-video {
+
+    margin:20px;
+    width:560px;
+
+    height:315px;
+
+}
+
+
+
+
+.custom-form {
+
+
+    padding: 50px;
+    width:60%;
+
+    margin:0 auto;
+
+
+}
+
+
+
+
+.example_id {
+    margin-bottom : 100px;
+    border-radius: 1rem;
+
+}
+
+
+
+.custom-btn {
+
+    background-color: #bd9c6f;
+    border-color : #b8976c;
+    border-radius:0.5rem;
+
+    margin: 0 15px;
+
+    color: #fff;
+    font-weight:700;
+
+    padding:15px;
+
+}
+
+
+
+		.custom-btn:hover {
+
+
+    color: #fff;
+    text-decoration:none;
+
+    			background-color: #9e835d;
+    border-color : #9c805c;
+
+}
+
+
+
+.bottom-buttons {
+    margin: 50px 0;
+}
+
+
+
+
