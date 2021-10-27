@@ -1,24 +1,12 @@
-html, body {
-
-    color: #24221f;
-    margin: 0;
-
-    background-color : #F9E4C8;
-
-
-
-}
+html, body {    color: #24221f;    margin: 0;    background-color : #F9E4C8;}
 
 h1 {
-
-    padding: 50px 0;
-    text-align:center;
+    padding: 50px 0;    text-align:center;
 
     width:85%;
 
     line-height:5rem;
     margin:0;
-
 
 
 
