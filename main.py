@@ -1,6 +1,7 @@
 def format_css(path) -> None:
     """
-    Format a CSS file with consistent indentation, spacing and alphabetize CSS rules for each selector.
+    Format a CSS file with consistent indentation, spacing and alphabetize on selector names and CSS rules for each
+    selector.
     Not working with media queries and similar structures with multiples levels of "{}".
         @param path: Specify the file path you want to format.
         @type path: str
@@ -47,8 +48,20 @@ def format_css(path) -> None:
             # Add the current list of property-value pairs to the final list (list of lists)
             all_declarations.append(clean_declarations_list)
 
+    # SORT SELECTORS NAMES
+    # ----------------------------------------------------------
+    # Group selectors and associated declarations in a common list
+    group = list(zip(all_selectors, all_declarations))
+    # Unpack the sorted group data and group them in 2 different lists
+    sorted_selectors, sorted_declarations = zip(*sorted(group))
+    # Turn the sorted tuples to list to match the original type
+    all_selectors = list(sorted_selectors)
+    all_declarations = list(sorted_declarations)
+
     # Create a final list where all selectors declarations lists are alphabetically sorted
     sorted_all_declarations = [sorted(selector_declarations) for selector_declarations in all_declarations]
+
+    # ----------------------------------------------------------
 
     # Create an empty string to store the end result
     final_css_code = ""
